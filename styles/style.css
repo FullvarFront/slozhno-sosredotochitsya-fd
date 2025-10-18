@@ -200,6 +200,7 @@
 
 .text-block {
   display: grid;
+  align-items: start;
 }
 
 .content-section__title {
@@ -217,7 +218,6 @@
   font-weight: 700;
   line-height: 23.4px;
   font-size: 18px;
-  height: max-content;
 }
 
 .text-block__content {
