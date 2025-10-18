@@ -3,6 +3,9 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
+html.theme-light .header__rec {
+  display: none;
+}
 
 :root.theme-light {
   --main-text-color: #353430;

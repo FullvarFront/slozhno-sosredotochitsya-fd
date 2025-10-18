@@ -1,31 +1,22 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-body,
-.page {
-  margin: 0;
-  padding: 0;
-}
 
 .page {
   font-family: "IBM Plex mono", sans-serif;
   font-size: var(--main-text-size);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-color: var(--main-background-color);
 }
 
 .header {
   background-image: var(--background-image);
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
   display: grid;
-  min-height: 100vh;
-  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  grid-template-rows: 1fr min-content min-content;
   position: relative;
   color: var(--nav-color);
-}
-
-html.theme-light .header__rec {
-  display: none;
 }
 
 .header__rec {
@@ -136,7 +127,6 @@ html.theme-light .header__rec {
   margin: 0px 0 50px;
   color: var(--title-color);
   font-weight: 700;
-  font-style: Bold;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 83%;
   text-shadow: 4px 4px 0 var(--accent-color);
@@ -155,11 +145,10 @@ html.theme-light .header__rec {
   justify-self: end;
   margin-bottom: 100px;
   font-weight: 700;
-  font-style: Bold;
   line-height: 23.4px;
   color: #000;
   font-size: 18px;
-
+  justify-self: end;
   margin-right: 10px;
   @media (width>=768px) {
     margin-right: 20px;
@@ -217,7 +206,6 @@ html.theme-light .header__rec {
   color: var(--text-color);
   margin-bottom: 20px;
   font-weight: 700;
-  font-style: Bold;
   line-height: 23.4px;
   font-size: 18px;
 }
@@ -227,10 +215,9 @@ html.theme-light .header__rec {
   color: var(--content-section-color);
   margin-bottom: 10px;
   font-weight: 700;
-  font-style: Bold;
   line-height: 23.4px;
   font-size: 18px;
-  height: 23px;
+  height: max-content;
 }
 
 .text-block__content {
@@ -284,7 +271,6 @@ html.theme-light .header__rec {
 
 .gallery__title {
   font-weight: 700;
-  font-style: Bold;
   font-size: 18px;
   line-height: 23.4px;
   color: var(--content-section-color);
@@ -346,7 +332,6 @@ html.theme-light .header__rec {
 
 .footer__text {
   font-weight: 700;
-  font-style: Bold;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 83%;
   color: var(--title-color);
