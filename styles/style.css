@@ -3,19 +3,20 @@
 .page {
   font-family: "IBM Plex mono", sans-serif;
   font-size: var(--main-text-size);
+  background-color: var(--main-background-color);
+  background-image: var(--background-image);
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: var(--main-background-color);
 }
 
 .header {
-  background-image: var(--background-image);
+  position: relative;
   display: grid;
   height: 100vh;
-  grid-template-rows: 1fr min-content min-content;
-  position: relative;
+  grid-template-rows: 1fr min-content 1fr;
+  align-items: start;
   color: var(--nav-color);
 }
 
@@ -146,7 +147,7 @@
   margin-bottom: 100px;
   font-weight: 700;
   line-height: 23.4px;
-  color: #000;
+  color: var(--main-background-color);
   font-size: 18px;
   justify-self: end;
   margin-right: 10px;
