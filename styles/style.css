@@ -205,6 +205,8 @@
 
 .text-block {
   display: grid;
+  align-items: start;
+  align-content: start;
 }
 
 .content-section__title {
@@ -258,12 +260,11 @@
   }
 
   .text-block__title {
-    height: max-content;
+    align-self: start;
   }
 
   .text-block__content {
     @media (width>=1024px) {
-      height: 391px;
     }
   }
 
@@ -308,8 +309,6 @@
   }
 
   @media (width>=1024px) {
-    margin-top: 35px;
-
     .text-block__content {
       margin-top: 9px;
     }
@@ -348,6 +347,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto;
     gap: 20px;
+    margin-top: 10px;
   }
 }
 
@@ -391,7 +391,7 @@
   min-height: 668px;
 
   @media (width >= 768px) {
-    margin-top: 50px;
+    margin-top: 40px;
   }
 }
 
