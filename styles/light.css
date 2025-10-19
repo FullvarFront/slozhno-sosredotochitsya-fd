@@ -18,6 +18,7 @@ html.theme-light .header__rec {
   --button-border-color: #353430;
   --button-border-color-hover: #32312d66;
   --content-section-color: #353430;
+  --header-text: #353430;
 }
 
 @media (prefers-color-scheme: light) {
@@ -32,5 +33,10 @@ html.theme-light .header__rec {
     --button-border-color: #353430;
     --button-border-color-hover: #32312d66;
     --content-section-color: #353430;
+    --header-text: #353430;
+  }
+
+  .header__rec {
+    display: none;
   }
 }
